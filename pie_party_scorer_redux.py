@@ -7,11 +7,11 @@ root.title('REDUX')
 votes = []
 text_boxes = []
 string_vars = []
-# voters = ['Kaylyn', 'Alex', 'Josh', 'Kay', 'Dan', 'Max', 'Kate', 'John', 'AJ', 'Mike']
-voters = ['Kaylyn', 'Alex', 'Josh']
+voters = ['Kaylyn', 'Alex', 'Josh', 'Kay', 'Dan', 'Max', 'Kate', 'John', 'AJ', 'Mike']
 number_of_voters = len(voters)
 scores = []
 results = {}
+
 
 def create_frame(number):
 
@@ -42,9 +42,6 @@ def create_frame(number):
                 r.set(NO_VOTE_STRING)
         except ValueError:
             pass
-
-    def reset():
-        r.set('1')
 
     label = Label(text=f'Item #{number}')
     label.pack()
